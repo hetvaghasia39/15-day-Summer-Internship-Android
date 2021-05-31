@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ZeroPositiveNegativeActivity">
+
+    <TextView
+        android:id="@+id/zpn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Whether no is +ve or -ve or 0"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="20sp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/num"
+            android:background="@drawable/input_border"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:layout_marginEnd="10dp"
+            android:autofillHints="Enter number"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:hint="Enter number"
+            android:textSize="20sp"
+            android:inputType="numberSigned" />
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:background="@drawable/custom_button"
+            android:layout_height="44dp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="Check" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:text="Number is " />
+        <TextView
+            android:id="@+id/ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
